@@ -1,2 +1,3 @@
 console.log(zombi);
-dfsfsdf
+console.log(zombi2)
+
