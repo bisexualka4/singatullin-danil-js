@@ -9,8 +9,12 @@
 
 <body>
     <script>
-        let name = prompt("как тебя зовут?");
-        console.log(`Привет ${name}! ${name}, как у тебя дела?`);
+        const a = prompt("Введите a");
+        let status = "нечетное"
+        if (a % 2 == 0) {
+          status = "четное"
+        }
+        console.log(`Число ${a} ${status}`)
     </script>
 </body>
 
