@@ -1,2 +1,0 @@
-pervoe
-vtoroe
