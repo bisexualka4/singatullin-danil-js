@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const arr = [];
+       arr[0] = [64, 362, 35, 786, 53];
+       arr[1] = [73, 87, 0, 80, 367];
+       arr[2] = [98, 457, 76, 21, 36];
+       arr[3] = [64, 1, 765, 534, 26];
+       arr[4] = [27, 852, 14, 98, 60];
+       
+       let mult = 1;
+
+       for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+           if (j % 2 == 0) {
+            mult *= arr[i][j]; 
+        }
+       }
+    }
+       console.log(mult);
+    </script>
+</body>
+</html>
