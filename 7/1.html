@@ -7,12 +7,13 @@
 </head>
 <body>
     <script>
-        const names = ["Илон", "Павел", "Джефф", "Евгений", "Билл"];
-
-        for (let j = 0; j < 3; j++) {
-            names.push(prompt("Введите имя"));
+        function pam(arr, callback) {
+            const results = [];
+            for (let i = 0; i < arr.length; i++);
+            const result = callback(arr[i]);
+            results.push(result);
+            return results; 
         }
-        console.log(names)
     </script>
 </body>
 </html>
