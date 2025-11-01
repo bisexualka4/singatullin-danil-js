@@ -41,15 +41,8 @@
           "count": 500
         }
       },
-    ];  
-        function pam(arr, callback) {
-            const results = [];
-            for (let i = 0; i < arr.length; i++) {
-                results[i] = callback(arr[i]);
-            }
-            return results; 
-        }
-        function vyvod(products) {
+    ];
+    function vyvod(products) {
             console.log(products.id)
             console.log(products.title)
             console.log(products.description)
@@ -57,8 +50,7 @@
             console.log(products.rating)
             console.log("///")
         }
-
-        pam(products, vyvod)
+        products.map(vyvod)
     </script>
 </body>
 </html>
