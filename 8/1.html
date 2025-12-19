@@ -7,13 +7,17 @@
 </head>
 <body>
     <script>
-        async function getUser() {
-            const res = await fetch(`https://jsonplaceholder.typicode.com/users/${name}`)
-            const users = await res.json();
-            console.log(users[name]);
+        async function getUsers(name) {
+            try {
+                const res = await fetch(`https://jsonplaceholder.typicode.com/users/${name}`);
+                const users = await res.json();
+                console.log(users.name)
+            } catch (e) {
+                console.error("ERROR")
+            }
         }
 
-        getUser();
+        getUsers();
     </script>
 </body>
 </html>
